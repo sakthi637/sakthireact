@@ -1,0 +1,242 @@
+#comp-new-section {
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .comp-new-section-content {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .comp-new-section-content span {
+    font-size: 39px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    display: flex;
+    margin-top: 30px;
+    font-family: "Noto Sans", sans-serif;
+    color: rgba(60, 66, 66, 1);
+    font-weight: bold;
+    gap: 20px;
+  }
+  
+  .comp-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .comp-column {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .comp-column:hover {
+    transform: scale(1.05);
+  }
+  
+  .comp-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .comp-column h3,
+  .comp-column p {
+    font-family: "Noto Sans", sans-serif;
+    margin: 5px 0;
+    text-align: left;
+  }
+  
+  .comp-column h3 {
+    font-size: 18px;
+    color: rgba(25, 25, 25, 1);
+  }
+  
+  .comp-column a {
+    font-size: 14px;
+    color: rgba(127, 127, 127, 1);
+    text-decoration: none;
+  }
+  
+  .line2 {
+    width: 6px;
+    height: 5rem;
+    display: flex;
+    padding: 6px 0;
+  }
+  
+  .arrow-icon {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    font-size: 19px;
+    color: #666;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .comp-column:hover .arrow-icon {
+    color: #000;
+    transform: translateX(5px);
+  }
+  
+  /* Media Queries */
+  
+  /* For screens between 360px and 425px */
+  @media only screen and (min-width: 360px) and (max-width: 425px) {
+    .comp-new-section-content span {
+      font-size: 21px;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: -10px;
+    }
+  
+    .comp-row {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .comp-column {
+      flex: 1 1 45%;
+      margin: -1%;
+      margin-bottom: 15px;
+      position: relative;
+    }
+  
+    .comp-column a {
+      font-size: 8px;
+    }
+  
+    .line2 {
+      width: 6px;
+      height: 50px;
+      padding-bottom: 3px;
+      padding: 10px 0;
+      margin-top: -9px;
+    }
+  
+    .comp-column img {
+      margin-top: -40px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .comp-column h3 {
+      font-size: 12px;
+    }
+  
+    .arrow-icon {
+      position: relative;
+      bottom: 20px;
+      left: 30px;
+      font-size: 9px;
+    }
+  }
+  
+  /* For screens between 426px and 768px */
+  @media only screen and (min-width: 426px) and (max-width: 768px) {
+    .comp-new-section-content span {
+      font-size: 24px;
+      flex-direction: row;
+      gap: 15px;
+      margin-top: -20px;
+    }
+  
+    .comp-row {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .comp-column {
+      flex: 0 0 39%;
+      margin: 1%;
+      margin-bottom: 15px;
+      position: relative;
+    }
+  
+    .comp-column a {
+      font-size: 10px;
+    }
+  
+    .line2 {
+      width: 6px;
+      height: 50px;
+      padding-bottom: 3px;
+      padding: 10px 0;
+      margin-top: -8px;
+    }
+  
+    .comp-column img {
+      margin-top: -30px;
+      width: 27vw;
+      height: auto;
+    }
+  
+    .comp-column h3 {
+      font-size: 10px;
+    }
+  
+    .arrow-icon {
+      position: relative;
+      bottom: 25px;
+      left: 60px;
+      font-size: 12px;
+    }
+  }
+  
+  /* For screens between 769px and 1024px */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .comp-new-section-content span {
+      font-size: 32px;
+      gap: 20px;
+    }
+  
+    .comp-row {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .comp-column {
+      margin: 10px;
+      flex-basis: calc(50% - 20px);
+    }
+  
+    .arrow-icon {
+      bottom: 30px;
+      right: 20px;
+      font-size: 18px;
+    }
+  }
+  
+  /* For screens between 1025px and 1440px */
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .comp-new-section-content span {
+      font-size: 36px;
+      gap: 20px;
+    }
+  
+    .comp-row {
+      flex-direction: row;
+    }
+  
+    .comp-column {
+      margin: 10px;
+      flex-basis: calc(25% - 20px);
+    }
+  
+    .arrow-icon {
+      bottom: 35px;
+      right: 25px;
+      font-size: 19px;
+    }
+  }
+  

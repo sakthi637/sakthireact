@@ -1,0 +1,121 @@
+#back {
+    background-color: rgba(60, 66, 66, 1);
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 20px;
+    width: 86%;
+    margin-left: 7%;
+    text-align: center;
+    margin-bottom: 40px;
+    height: auto;
+  }
+  
+  .back-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .back-content h1 {
+    font-size: 36px;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .back-content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+    font-family: "Noto Sans", sans-serif;
+  }
+  
+  #back .back-content .in .int {
+    font-weight: bold;
+    color: rgba(251, 209, 3, 1);
+  }
+  
+  .back-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .back-image {
+    flex: 1 1 20%;
+    max-width: 150px;
+  }
+  
+  .back-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 9px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media only screen and (min-width: 360px) and (max-width: 425px) {
+    .back-content h1 {
+      font-size: 28px;
+    }
+  
+    .back-content p {
+      font-size: 16px;
+    }
+  
+    .back-image {
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
+  }
+  
+  @media only screen and (min-width: 426px) and (max-width: 768px) {
+    .back-content h1 {
+      font-size: 32px;
+    }
+  
+    .back-content p {
+      font-size: 18px;
+    }
+  
+    .back-image {
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .back-content h1 {
+      font-size: 36px;
+    }
+  
+    .back-content p {
+      font-size: 20px;
+    }
+  
+    .back-image {
+      flex: 1 1 20%;
+      max-width: 20%;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .back-content h1 {
+      font-size: 48px;
+    }
+  
+    .back-content p {
+      font-size: 22px;
+    }
+  
+    .back-image {
+      flex: 1 1 15%;
+      max-width: 15%;
+    }
+  }
+  
